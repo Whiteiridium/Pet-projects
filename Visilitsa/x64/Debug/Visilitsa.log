@@ -1,0 +1,5 @@
+﻿  Main.cpp
+D:\Programming\Visilitsa\Main.cpp(82,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\Programming\Visilitsa\Main.cpp(86,14): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Programming\Visilitsa\Main.cpp(78): warning C4715: distribution: значение возвращается не при всех путях выполнения
+  Visilitsa.vcxproj -> D:\Programming\Visilitsa\x64\Debug\Visilitsa.exe
