@@ -37,22 +37,25 @@ int Intoduction()
     return difficulty;
 }
 
+vector<string> EasyWords;
+vector<string> AveWords;
+vector<string> HardWords;
 
 string easy(int number)
 {
-    vector<string> EasyWords = { "apple", "pineapple" };
+    EasyWords = { "apple", "pineapple", "impose", "strife", "disrupt", "gamut", "booth"};
     return EasyWords[number];
 }
 
 string average(int number)
 {
-    vector<string> AveWords = { "pyramid", "triangle" };
+    AveWords = { "pyramid", "triangle", "enlighten", "genuinely", "benevolent", "guesstimate"};
     return AveWords[number];
 }
 
 string hard(int number)
 {
-    vector<string> HardWords = { "Tremendous", "polymorphism" };
+    HardWords = { "Tremendous", "polymorphism", "particularly", "appalling", "baffle", "divination"};
     return HardWords[number];
 }
 
@@ -62,19 +65,18 @@ string distribution(int difficulty)
     switch (difficulty)
     {
     case 1:
-         number = rand() % 2;
+         number = rand() % 6;
         return easy(number);
         break;
     case 2:
-         number = rand() % 2;
+         number = rand() % 6;
         return average(number);
         break;
     case 3:
-         number = rand() % 2;
+         number = rand() % 6;
         return hard(number);
         break;
     }
-
 }
 
 int main()
@@ -111,7 +113,7 @@ int main()
        
         char ch;
         cout << "Inputed letter -- ";
-        cin.get(ch);
+        cin >> ch;
 
         for (int i = 0; i < size; ++i)
         {
